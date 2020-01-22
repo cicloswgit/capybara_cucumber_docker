@@ -7,8 +7,6 @@ Automated testing structure configured to running a capybara cucumber project in
 ```
 docker build .
 ```
-
-
 _________________
 
 
@@ -16,6 +14,7 @@ _________________
 
 
 ### Configure Selenium environment
+```
 Install ruby, chrome and chromedriver tools
 Install bundler and cucumber ruby gems
 ```
