@@ -11,5 +11,6 @@ end
 
 Então("visualizo os produtos disponíveis na loja") do
 	@busca.wait_until_div_resultado_visible
+	Capybara.page.save_screenshot('results/busca.png', :full => true)
 	expect(@busca.div_resultado.first(:css, 'div.product-card-photo')).not_to be_nil
 end

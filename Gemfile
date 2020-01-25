@@ -10,4 +10,5 @@ group :test do
 	gem 'webdrivers', '~> 4.2'	
 	gem 'selenium-webdriver'
 	gem 'poltergeist', '~> 1.18', '>= 1.18.1'
+	gem 'ffi', '~> 1.12', '>= 1.12.1'
 end

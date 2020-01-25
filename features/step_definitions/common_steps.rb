@@ -4,7 +4,7 @@ Dado("que requisito a URL das Lojas Americanas") do
 end
 
 Então("visulizo a sua página Home") do
-	expect(Capybara.page).to have_css('a[title="Americanas.com"]')
+	Busca.new.wait_until_campo_busca_visible
+	Capybara.page.save_screenshot('results/acesso.png', :full => true)
+	expect(Capybara.page).to have_css('a[title="Americanas"]')
 end
-  
-  

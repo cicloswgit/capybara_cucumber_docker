@@ -7,7 +7,13 @@ Before do
 		end
 		Capybara.server = true
 	elsif(ENV['driver'] == 'poltergeist')
-			
+		Capybara.register_driver :poltergeist do |app|
+			options = { js_errors: false }	
+			Capybara::Poltergeist::Driver.new(app, options)		
+		end	
+		Capybara.current_driver = Capybara.default_driver = :poltergeist
+		Capybara.app_host = 'https://www.americanas.com.br/'
+		Capybara.run_server = false
 	else	
 		Capybara.register_driver :chrome do |app|
 			Capybara::Selenium::Driver.new(app, browser: :chrome)
