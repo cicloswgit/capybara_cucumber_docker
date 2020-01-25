@@ -6,6 +6,8 @@ Before do
 			Capybara::Selenium::Driver.new(app, browser: :remote, url: "http://localhost:4444/wd/hub", desired_capabilities: :firefox)
 		end
 		Capybara.server = true
+	elsif(ENV['driver'] == 'poltergeist')
+			
 	else	
 		Capybara.register_driver :chrome do |app|
 			Capybara::Selenium::Driver.new(app, browser: :chrome)

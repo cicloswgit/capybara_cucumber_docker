@@ -9,4 +9,5 @@ group :test do
 	gem 'rspec', '~> 3.9'
 	gem 'webdrivers', '~> 4.2'	
 	gem 'selenium-webdriver'
+	gem 'poltergeist', '~> 1.18', '>= 1.18.1'
 end

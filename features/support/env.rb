@@ -4,4 +4,6 @@ require 'site_prism'
 require 'rspec/expectations'
 #require 'webdrivers'
 require "selenium/webdriver"
+require 'capybara/poltergeist'
+
 
