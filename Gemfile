@@ -11,4 +11,5 @@ group :test do
 	gem 'selenium-webdriver'
 	gem 'poltergeist', '~> 1.18', '>= 1.18.1'
 	gem 'ffi', '~> 1.12', '>= 1.12.1'
+	gem 'wraith', '~> 4.2', '>= 4.2.4'
 end
